@@ -4,7 +4,7 @@ from PIL import Image
 st.title("Malaysia Food Quiz")
 st.header("Test your knowledge about Malaysian Cuisine!")
 
-if "score" in st.session_state:
+if "score" not in st.session_state:
     st.session_state.score = 0
 
 Q1 = st.radio(
