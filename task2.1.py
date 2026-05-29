@@ -38,29 +38,29 @@ st.divider()
 if st.button("Submit Answers"):
     score = 0
 
-if Q1 == "A. Nasi Lemak":
-    st.success("✅ Question 1 is correct!")
-score += 1
-else:
-st.error("❌ Question 1 is wrong. The answer is Nasi Lemak.")
+    if Q1 == "A. Nasi Lemak":
+        st.success("✅ Question 1 is correct!")
+        score += 1
+    else:
+        st.error("❌ Question 1 is wrong. The answer is Nasi Lemak.")
 
-if Q2 == "B. Chicken":
-    st.success("✅ Question 2 is correct!")
-score += 1
-else:
-st.error("❌ Question 2 is wrong. The answer is Chicken.")
+    if Q2 == "B. Chicken":
+        st.success("✅ Question 2 is correct!")
+        score += 1
+    else:
+        st.error("❌ Question 2 is wrong. The answer is Chicken.")
 
-if Q3 == "C.Penang":
-    st.success("✅ Question 3 is correct!")
-score += 1
-else:
-st.error("❌ Question 3 is wrong. The answer is Penang.")
+    if Q3 == "C.Penang":
+        st.success("✅ Question 3 is correct!")
+        score += 1
+    else:
+        st.error("❌ Question 3 is wrong. The answer is Penang.")
 
-if Q4 == "B. Johor":
-    st.success("✅ Question 4 is correct!")
-score += 1
-else:
-st.error("❌ Question 4 is wrong. The answer is Johor.")
+    if Q4 == "B. Johor":
+        st.success("✅ Question 4 is correct!")
+        score += 1
+    else:
+        st.error("❌ Question 4 is wrong. The answer is Johor.")
 
 st.session_state.score = score
 
