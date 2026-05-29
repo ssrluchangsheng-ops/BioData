@@ -30,7 +30,7 @@ st.divider()
 image = Image.open("Q4.png")
 st.image(image,caption="Where is the origin?", width=250)
 Q4 = st.radio(
-    "Satay is a popular grilled meat dish. Its origin is:"
+    "Satay is a popular grilled meat dish. Its origin is:",
     ["A. Kedah", "B.Johor", "C.Selangor", "D.Perlis"]
 )
 st.divider()
