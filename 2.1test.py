@@ -4,6 +4,8 @@ from PIL import Image
 st.title("Malaysia Food Quiz")
 st.header("Test your knowledge about Malaysian Cuisine!")
 
+student_name = st.text_input("Enter your name:")
+
 if "score" not in st.session_state:
     st.session_state.score = 0
 
@@ -69,4 +71,5 @@ if st.button("Submit Answers"):
 
     st.session_state.score = score
 
+st.success(f"Thank you, {student_name}!")
 st.info(f"Your current score: {st.session_state.score}/4")
