@@ -33,7 +33,7 @@ Q4 = st.radio(
     "Satay is a popular grilled meat dish. Its origin is:"
     ["A. Kedah", "B.Johor", "C.Selangor", "D.Perlis"]
 )
-st.divider(
+st.divider(()
 
 if st.button("Submit Answers"):
     score = 0
